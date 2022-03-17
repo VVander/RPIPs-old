@@ -16,7 +16,7 @@ We intend RPIPs to be the primary mechanisms for proposing new features, for col
 
 # RPIP Types
 
-There are three types of RPIP:
+There are two types of RPIP:
 
     A **Protocol RPIP** describes any change that affects the core Rocket Pool protocol as is currently defined via the smart contract implementations. Protocol RPIPs consist of two parts—a design document and an implementation. Furthermore, Protocol RPIPs can be broken down into the following categories:
         **Core**: improvements relevant to core protocol design.
@@ -218,7 +218,7 @@ RPIPs are encouraged to follow RFC 2119 for terminology and to insert the follow
 
 # History
 
-This document was dThiserived heavily from Ethereum's EIP-1 written by [Martin Becze](mailto:mb@ethereum.org), [Hudson Jameson](mailto:hudson@ethereum.org), et al. which is in turn derived from Bitcoin’s BIP-0001 written by Amir Taaki which in turn was derived from Python’s PEP-0001. In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use in the Rocket Pool Improvement Process, and should not be bothered with technical questions specific to Rocket Pool or the RPIP. Please direct all comments to the RPIP editors.
+This document was derived heavily from Ethereum's EIP-1 written by [Martin Becze](mailto:mb@ethereum.org), [Hudson Jameson](mailto:hudson@ethereum.org), et al. which is in turn derived from Bitcoin’s BIP-0001 written by Amir Taaki which in turn was derived from Python’s PEP-0001. In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use in the Rocket Pool Improvement Process, and should not be bothered with technical questions specific to Rocket Pool or the RPIP. Please direct all comments to the RPIP editors.
 
 # Copyright
 
