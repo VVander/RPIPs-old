@@ -23,8 +23,7 @@ The Rocket Pool project includes:
 
 The Rocket Pool core protocol is the set of smart contracts which are necessary for running a Rocket Pool node or swapping ETH for rETH via the deposit pool.
 
-#### Contracts
-##### rETH
+#### rETH
 |Network|Address|
 |---|---|
 | Mainnet | 0xae78736Cd615f374D3085123A210448E74Fc6393 |
@@ -32,7 +31,7 @@ The Rocket Pool core protocol is the set of smart contracts which are necessary 
 
 _[INSERT rETH CONTRACT DOCUMENTATION]_
 
-##### RPL
+#### RPL
 |Network|Address|
 |---|---|
 |Mainnet|0xD33526068D116cE69F19A9ee46F0bd304F21A51f|
@@ -40,7 +39,7 @@ _[INSERT rETH CONTRACT DOCUMENTATION]_
 
 _[INSERT RPL CONTRACT DOCUMENTATION]_
 
-##### OLD RPL
+#### OLD RPL
 |Network|Address|
 |---|---|
 |Mainnet|0xb4efd85c19999d84251304bda99e90b92300bd93|
@@ -48,7 +47,7 @@ _[INSERT RPL CONTRACT DOCUMENTATION]_
 
 _[INSERT OLD RPL CONTRACT DOCUMENTATION]_
 
-##### Storage
+#### Storage
 |Network|Address|
 |---|---|
 |Mainnet|0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46|
@@ -56,7 +55,7 @@ _[INSERT OLD RPL CONTRACT DOCUMENTATION]_
 
 _[INSERT Storage CONTRACT DOCUMENTATION]_
 
-##### [INSERT MORE CONTRACTS]
+#### [INSERT MORE CONTRACTS]
 
 ### Other Contracts
 
