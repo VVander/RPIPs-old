@@ -220,7 +220,7 @@ The editors don’t pass judgment on RPIPs. We merely do the administrative & ed
 
 When referring to an RPIP by number, it should be written in the hyphenated form RPIP-X where X is the RPIP’s assigned number.
 
-### RFC 2119**
+### RFC 2119
 
 RPIPs are encouraged to follow RFC 2119 for terminology and to insert the following at the beginning of the Specification section:
 
