@@ -28,7 +28,7 @@ A multi-signature scheme for controlling the withdrawal and node wallets is RECO
 
 ### Client Wallet Specification
 
-### Designated Node Withdrawal Wallet Specification
+### Node Withdrawal Wallet Specification
 
 #### ETH Reward Fee
 
