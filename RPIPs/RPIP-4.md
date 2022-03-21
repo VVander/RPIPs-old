@@ -9,7 +9,7 @@ created: 2022-03-21
 ---
 
 ## Abstract
-The Rocket Pool community at large agrees to use RPL token quadratic voting for governance proposals via the snapshot.org platform. Snapshot votes which pass are immediately adopted and the protocol DAO will endeavor to enact it as soon as reasonably possible.
+The Rocket Pool community at large agrees to use RPL token quadratic voting for governance proposals via the snapshot.org platform. Snapshot votes which pass mean their proposals are immediately adopted and the protocol DAO will endeavor to enact them as soon as reasonably possible.
 
 ## Motivation
 Governance in Rocket Pool is currently ad hoc. There is no way for the community to adopt proposals or legitimately request or pay for work. We must adopt a governance mechanism, even if imperfect, before any governance actions can be taken legitimately, such as but not limited to spending pDAO funds.
