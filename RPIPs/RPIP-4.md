@@ -26,11 +26,11 @@ All Rocket Pool governance proposals must first be posted as a new topic on the 
 * Oppose
 [/poll]
 ```
-A favorable forum poll which is live for at least 7 days and a corresponding RPIP document are necessary for snapshot voting to be scheduled. Once the requirements have been met, the following parties will create a quadratic RPL snapshot vote and publicize it.
+A favorable forum poll which is live for at least 7 days and a corresponding RPIP document are necessary for snapshot voting to be scheduled. Once the requirements have been met, the following parties will create a quadratic RPL snapshot vote and publicize it:
 
-Darren Langley AKA langers (General Manager - Rocket Pool Pty Ltd)
-Mike Leach AKA Wander (RPIP Editor, Founder - Bamboo Financial Technologies)
-[others]
+- Darren Langley AKA langers (General Manager - Rocket Pool Pty Ltd)
+- Mike Leach AKA Wander (RPIP Editor, Founder - Bamboo Financial Technologies)
+- [others]
 
 The snapshot vote will run for [14] days and requires a [50.1%] majority to be successful.
 
