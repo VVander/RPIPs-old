@@ -34,7 +34,15 @@ The snapshot vote will run for [14] days and requires a [50.1%] majority to be s
 
 ### Snapshot Vote Strategy
 
-The snapshot vote must utilize a custom strategy to accurately capture community sentiment. First, to include staked RPL in calculations, if a voter is a node operator, they must sign their vote message from the node withdrawal address so staked RPL is included. 
+The snapshot vote must utilize a custom strategy to accurately capture community sentiment. 
+
+First, all votes are recorded into a `results` map which utilizes an Ethereum address as the index (`address`). The `result` map's values include a boolean `vote`, with `true` indicating support for the proposal and `false` indicating opposition, and an integer `power` which contains the ultimate voting power of that address. 
+
+`power` for an address is determined in two steps. First, the address is compared to the list of withdrawal addresses for all nodes, and any nodes which use `address` as their withdrawal address will have their contained RPL (staked or otherwise) summed with the amount of RPL contained in the address. Next, `power` is determined in accordance with the following equation for quadratic voting: 
+
+`power = √rpl`, with the result truncated into an integer.
+
+Note that to include staked RPL in calculations, if a voter is a node operator, they must sign their vote message from the node withdrawal address so staked RPL is included. 
 
 ## Rationale
 
