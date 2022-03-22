@@ -2,7 +2,6 @@
 rpip: 5
 title: Protocol Governance
 author: Mike Leach (@VVander) <mike@bamboofin.tech>
-discussions-to: <URL>
 status: Living
 type: Informational
 created: 2022-03-21
