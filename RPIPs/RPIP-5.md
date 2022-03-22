@@ -13,7 +13,7 @@ Rocket Pool governance is divided into three distinct DAO units, each with their
 
 For a more technical overview of Rocket Pool, see RPIP-2.
   
-[insert RP governance image]
+![RP Governance Diagram](../assets/rpip-5/RP-governance.png)
 
 ## Rocket Pool DAO (RPDAO)
 
