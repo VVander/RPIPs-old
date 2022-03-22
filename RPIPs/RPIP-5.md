@@ -16,7 +16,7 @@ For a more technical overview of Rocket Pool, see RPIP-2.
 
 ## Rocket Pool DAO (RPDAO)
 
-The RPDAO is the main mechanism for the community at large to engage with Rocket Pool. As such, the RPDAO is the organization which captures community sentiment surrounding proposals and enacts them as dictated by the RPDAO voting process. The RPDAO governs itself using the mechanisms described in RPIP-4. 
+The RPDAO is the main mechanism for the community at large to engage with Rocket Pool. As such, the RPDAO is the organization which captures community sentiment surrounding proposals and enacts them as dictated by the RPDAO voting process. The RPDAO governs itself using the mechanisms described in [RPIP-4](RPIP-4.md). 
   
 The RPDAO is responsible for overall project governance and meta-governance intitiatives, such as the RPIP editing process, and it is responsible for the enactment of successful, finalized proposals through whatever means possible. It also has ultimate authority over the existance and structure for the pDAO and oDAO, though these organizations also have their own on-chain governance mechanisms.
   
