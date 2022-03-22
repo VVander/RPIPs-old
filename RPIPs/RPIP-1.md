@@ -78,7 +78,7 @@ If this period results in necessary normative changes it will revert the RPIP to
 
 ## What belongs in a successful RPIP?
 
-Each RPIP should have the following parts:
+Each Protocol RPIP should have the following parts:
 
 - Preamble - RFC 822 style headers containing metadata about the RPIP, including the RPIP number, a short descriptive title (limited to a maximum of 44 characters), a description (limited to a maximum of 140 characters), and the author details. Irrespective of the category, the title and description should not include RPIP number. See below for details.
 - Abstract - Abstract is a multi-sentence (short paragraph) technical summary. This should be a very terse and human-readable version of the specification section. Someone should be able to read only the abstract to get the gist of what this specification does.
@@ -90,6 +90,8 @@ Each RPIP should have the following parts:
 - Security Considerations - All RPIPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions,
 surfaces risks, and can be used throughout the life-cycle of the proposal. E.g. include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. RPIP submissions missing the “Security Considerations” section will be rejected. An RPIP cannot proceed to status “Final” without a Security Considerations discussion deemed sufficient by the reviewers.
 - Copyright Waiver - All RPIPs must be in the public domain. See the bottom of this RPIP for an example copyright waiver.
+
+Meta and Informational RPIPs do not necessarily follow this format.
 
 ## RPIP Formats and Templates
 
