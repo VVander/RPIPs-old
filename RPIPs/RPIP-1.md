@@ -36,9 +36,9 @@ Note that there is no Type reserved for Smart Node changes. Improvements to the 
 
 Parties involved in the process are you, the champion or RPIP author, the RPIP editors, and the Rocket Pool developers.
 
-Before you begin writing a formal RPIP, you should vet your idea. Ask the Rocket Pool community first if an idea is original to avoid wasting time on something that will be rejected based on prior research. It is thus recommended to open a discussion on the Rocket Pool Discord server first.
+Before you begin writing a formal RPIP, you should vet your idea. Ask the Rocket Pool community on the Discord server or DAO Forum first if an idea is original to avoid wasting time on something that will be rejected based on prior research.
 
-Once the idea has been vetted, your next responsibility will be to present (by means of an RPIP) the idea to the editors, developers, and the community to give feedback. You should try and gauge whether the interest in your RPIP is commensurate with both the work involved in implementing it and how many parties will be affected by it. Negative community feedback will be taken into consideration and may prevent your RPIP from moving past the Draft stage.
+Once the idea has been vetted, your next responsibility will be to present an RPIP to the editors, developers, and the community for feedback. You should try and gauge whether the interest in your RPIP is commensurate with both the work involved in implementing it and how many parties will be affected by it. Negative community feedback will be taken into consideration and may prevent your RPIP from moving past the Draft stage.
 
 It is highly recommended that a single RPIP contain a single key proposal or new idea. The more focused the RPIP, the more successful it tends to be.
 
@@ -46,13 +46,11 @@ It is highly recommended that a single RPIP contain a single key proposal or new
 
 The following is the standardization process for all RPIPs in all tracks:
 
-![RPIP Status Diagram](../assets/rpip-1/RPIP-process-update.jpg)
+**Draft** - The first tracked stage of an RPIP in development. A Draft RPIP is merged by an RPIP Editor into the RPIP repository once properly formatted.
 
-**Draft** - The first formally tracked stage of an RPIP in development. An RPIP is merged by an RPIP Editor into the RPIP repository when properly formatted.
+**Review** - Reached once an RPIP Author marks an RPIP as ready for Review.
 
-**Review** - An RPIP Author marks an RPIP as ready for and requesting Peer Review.
-
-**Final** - This RPIP represents the final standard. A Final RPIP exists in a state of finality and should only be updated to correct errata and add non-normative clarifications.
+**Final** - A Final RPIP exists in a state of finality and should only be updated to correct errata and add non-normative clarifications.
 
 **Stagnant** - Any RPIP in Draft or Review which is inactive for too long is moved to Stagnant. An RPIP may be resurrected by simply requesting this from an editor.
 
@@ -60,9 +58,11 @@ The following is the standardization process for all RPIPs in all tracks:
 
 **Living** - A special status for RPIP that are designed to be continually updated and not reach a state of finality. This includes most notably RPIP-1.
 
+Only Final and Living RPIPs are eligible for official adoption.
+
 ## What belongs in a successful RPIP?
 
-An RPIP must meet certain minimum criteria. It must be a clear and complete description of the proposed enhancement. The enhancement must represent a net improvement. The proposed implementation, if applicable, must be solid and must not complicate the protocol unduly.
+An RPIP must must be a clear and complete description of the proposed enhancement. The enhancement must represent a net improvement. The proposed implementation, if applicable, must not complicate the protocol unduly.
 
 ## RPIP Formats and Templates
 
@@ -76,19 +76,15 @@ Each RPIP must begin with an RFC 822 style header preamble, preceded and followe
 
 `title`: The RPIP title is a few words, not a complete sentence
 
-`description`: Description is one full (short) sentence
-
 `author`: The list of the author’s or authors’ name(s) and/or username(s), or name(s) and email(s). Details are below.
 
-`discussions-to`: The url pointing to the official discussion thread
+`discussions-to`: The url pointing to the official discussion thread on dao.rocketpool.net
 
 `status`: Draft, Review, Final, Stagnant, Withdrawn, Living
 
-`type`: One of Protocol, Meta, or Informational
+`type`: One of Protocol, Meta, or Informational. If Protocol, please include the category (`Core` or `RPRC`).
 
-`category`: One of Core or RPRC (Optional field, only needed for Standards Track RPIPs)
-
-`created`: Date the RPIP was created on
+`created`: Date of RPIP  number assignment in yyyy-mm-dd format, e.g. 2001-08-14
 
 `withdrawal-reason`: An optional sentence explaining why the RPIP was withdrawn.
 
@@ -96,29 +92,13 @@ Headers that permit lists must separate elements with commas.
 
 Headers requiring dates will always do so in the format of ISO 8601 (yyyy-mm-dd).
 
-#### `author` header
+### `author` header
 
 The `author` header lists the names, email addresses or usernames of the authors/owners of the RPIP. Those who prefer anonymity may use a username only, or a first name and a username. The format of the `author` header value is:
 
     Random J. User (@username) <address@dom.ain>
 
 Although authors are not required to provide a GitHub username or email address, at least one author must use a GitHub username in order to get notified on change requests and to approve or reject them.
-
-#### `discussions-to` header
-
-While an RPIP is a draft, a `discussions-to` header will indicate the Rocket Pool Governance Forum URL where the RPIP is being discussed (dao.rocketpool.net).
-
-#### `type` header
-
-The `type` header specifies the type of RPIP: Protocol, Meta, or Informational. If the track is Protocol, please include the subcategory (core or RPRC).
-
-#### `category` header
-
-The `category` header specifies the RPIP’s category. This is required for Protocol RPIPs only.
-
-#### `created` header
-
-The `created` header records the date that the RPIP was assigned a number. Both headers should be in yyyy-mm-dd format, e.g. 2001-08-14.
 
 ## Linking to External Resources
 
@@ -131,12 +111,6 @@ References to other RPIPs should follow the format `RPIP-N` where `N` is the RPI
 ## Auxiliary Files
 
 Images, diagrams and auxiliary files should be included in a subdirectory of the `assets` folder for that RPIP as follows: `assets/rpip-N` (where N is to be replaced with the RPIP number). When linking to an image in the RPIP, use relative links such as `[Image Title](../assets/rpip-1/image.png)`.
-
-## Transferring RPIP Ownership
-
-It occasionally becomes necessary to transfer ownership of RPIPs to a new champion. In general, we’d like to retain the original author as a co-author of the transferred RPIP, but that’s up to the original author. A good reason to transfer ownership is because the original author no longer has the time or interest in updating it or following through with the RPIP process, or has fallen off the face of the ‘net (i.e. is unreachable or isn’t responding to email). A bad reason to transfer ownership is because you don’t agree with the direction of the RPIP. We try to build consensus around an RPIP, but if that’s not possible, you can always submit a competing RPIP.
-
-If you are interested in assuming ownership of an RPIP, send a message asking to take over, addressed to both the original author and an RPIP editor. If the original author doesn’t respond, the RPIP editor will make a unilateral decision.
 
 ## RPIP Editors
 
