@@ -26,28 +26,59 @@ An on-chain accounting standard for SaaS providers has benefits for both provide
 
 A multi-signature scheme for controlling the withdrawal and node wallets is RECOMMENDED.
 
-### Client Wallet Specification
-
 ### Node Withdrawal Wallet Contract Specification
 
-#### ethBalanceOf
+#### Fields
+
+##### ethRewardFee
+
+Fee percentage assessed on ETH rewards.
+
+##### rplRewardFee
+
+Fee percentage assessed on RPL rewards.
+
+##### exit
+
+Array which uses addresses as an index. Keeps track of the priority of addresses to credit upon validator exit.
+
+##### admin
+
+Address with administrative privileges.
+
+#### Functions
+
+##### processValidatorExit
+
+When the node operator manually exits validators, they must manually call this method from the admin address.
+
+##### ethBalanceOf
 
 Gets the balance of ETH for an address.
 
-#### rplBalanceOf
+##### rplBalanceOf
 
 Gets the balance of RPL for an address.
 
-#### ethDepositFor
+##### ethDepositFor
 
 Deposits ETH and credits it to an address.
 
-#### rplDepositFor
+##### rplDepositFor
 
 Deposits RPL and credits it to an address. MUST NOT succeed if the node wallet RPL balance exceeds 150% of the node wallet ETH balance.
 
-#### ETH Reward Fee
+##### rplRewardsWithdraw
 
-#### RPL Reward Fee
+Withdraws a specified amount of RPL rewards for an address.
+
+##### exit
+
+Adds the address to the exit queue.
+
+
+
+
+
 
 ### Node Wallet Specification
