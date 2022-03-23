@@ -5,7 +5,7 @@ status: Draft
 type: Protocol
 category: RPRC
 author: Mike Leach (@Wander) <mike@bamboofin.tech>
-discussions-to: 
+discussions-to: https://discord.com/channels/405159462932971535/937053845610180628/956263874733174884
 created: 2022-03-19
 ---
 # Staking as a Service Provider Standard
