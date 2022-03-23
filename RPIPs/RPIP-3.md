@@ -28,7 +28,23 @@ A multi-signature scheme for controlling the withdrawal and node wallets is RECO
 
 ### Client Wallet Specification
 
-### Node Withdrawal Wallet Specification
+### Node Withdrawal Wallet Contract Specification
+
+#### ethBalanceOf
+
+Gets the balance of ETH for an address.
+
+#### rplBalanceOf
+
+Gets the balance of RPL for an address.
+
+#### ethDepositFor
+
+Deposits ETH and credits it to an address.
+
+#### rplDepositFor
+
+Deposits RPL and credits it to an address. MUST NOT succeed if the node wallet RPL balance exceeds 150% of the node wallet ETH balance.
 
 #### ETH Reward Fee
 
