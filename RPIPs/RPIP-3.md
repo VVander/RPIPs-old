@@ -16,11 +16,11 @@ A standard interface for staking as a service (SaaS) providers.
 
 ## Abstract
 
-RPRC-3 is a standard which allows SaaS providers to transparently manage client funds and apply fees on-chain. 
+The following provides a standard API for Rocket Pool SaaS provider contracts. RPRC-3 allows clients to stake ETH and requires providers to supply RPL collateral.
 
 ## Motivation
 
-An on-chain accounting standard for SaaS providers has benefits for both providers and users. Saaas providers benefit from streamlined operations and increased interoperability, and users have increased visibility into their provider's operations, allowing them to verify fees and other expenses are accounted for correctly.
+An on-chain accounting standard for SaaS providers has benefits for both providers and users. Providers benefit from streamlined operations and increased interoperability, and users have increased visibility into their provider's operations, allowing them to verify fees and other expenses are accounted for correctly.
 
 ## Specification
 
@@ -34,13 +34,9 @@ A multi-signature scheme for controlling the withdrawal and node wallets is RECO
 
 Fee percentage assessed on ETH rewards.
 
-##### rplRewardFee
-
-Fee percentage assessed on RPL rewards.
-
 ##### exit
 
-Array which uses addresses as an index. Keeps track of the priority of addresses to credit upon validator exit.
+Array of addresses. When the admin wallet calls `processValidatorExit(n)`, addresses in the `exit` array will be credited with their balance.
 
 ##### admin
 
@@ -50,35 +46,34 @@ Address with administrative privileges.
 
 ##### processValidatorExit
 
-When the node operator manually exits validators, they must manually call this method from the admin address.
+When the node operator exits validators, they may call this method from the admin address to distribute assets.
 
-##### ethBalanceOf
+``` js
+function processValidatorExit(uint256 numValidators) public view
+```
+
+##### balanceOf
 
 Gets the balance of ETH for an address.
 
-##### rplBalanceOf
+``` js
+function rplBalanceOf(address owner) public view returns (uint256)
+```
 
-Gets the balance of RPL for an address.
-
-##### ethDepositFor
+##### depositFor
 
 Deposits ETH and credits it to an address.
 
-##### rplDepositFor
-
-Deposits RPL and credits it to an address. MUST NOT succeed if the node wallet RPL balance exceeds 150% of the node wallet ETH balance.
-
-##### rplRewardsWithdraw
-
-Withdraws a specified amount of RPL rewards for an address.
+``` js
+function ethDepositFor(address owner) public view
+```
 
 ##### exit
 
 Adds the address to the exit queue.
 
-
-
-
-
+``` js
+function exit(address owner) public view
+```
 
 ### Node Wallet Specification
