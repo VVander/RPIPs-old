@@ -77,3 +77,5 @@ function exit(address owner) public view
 ```
 
 ### Node Wallet Specification
+
+[can this be the same as a normal RP node wallet?]
