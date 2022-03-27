@@ -97,5 +97,7 @@ RPL is given a higher proportion of voting power because vote-buying is guarded 
 
 As with any token-based voting mechanism, even quadratic voting allows large actors to influence the outcome of votes. Although this risk is significantly lower with quadratic voting vs 1-to-1 token votes, it is possible that a large actor may create a proposal which harms the security of the protocol and force it to be adopted via this mechanism.
 
+[ TBD: analysis of RPL supply distribution and the potential attack vectors ]
+
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
