@@ -3,5 +3,5 @@ layout: page
 title: Core
 ---
 
-{% assign eips=site.pages|where:"type","Standards Track"|where:"category","Core" %}
-{% include eiptable.html eips=eips %}
+{% assign rpips=site.pages|where:"type","Protocol"|where:"category","Core" %}
+{% include rpiptable.html rpip=rpips %}

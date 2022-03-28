@@ -18,7 +18,7 @@ description: >-
   Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum
   platform, including core protocol specifications, client APIs, and contract
   standards.
-url: "https://eips.ethereum.org"
+url: "https://rpips.rocketpool.net"
 github_username:  ethereum
 
 header_pages:
@@ -36,7 +36,7 @@ markdown: kramdown
 theme: minima
 kramdown:
   parse_block_html: false
-  # This is the default, but be explicit as some EIPs depend on it
+  # This is the default, but be explicit as some RPIPs depend on it
   auto_ids: true
   # This is to ensure more determistic behaviour
   auto_id_stripping: true
@@ -47,9 +47,9 @@ permalink: /:slug
 defaults:
   -
     scope:
-      path: "EIPS"
+      path: "RPIPs"
     values:
-      layout: "eip"
+      layout: "rpip"
 
 exclude:
   - .github
@@ -60,7 +60,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - eip-template.md
+  - rpip-template.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
   - README.md
