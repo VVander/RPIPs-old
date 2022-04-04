@@ -16,7 +16,7 @@ A standard interface for staking as a service (SaaS) providers.
 
 ## Abstract
 
-The following provides a standard API for Rocket Pool SaaS provider contracts. RPRC-3 allows clients to stake ETH and requires providers to supply RPL collateral.
+The following provides a standard API for Rocket Pool SaaS provider contracts. RPRC-3 allows clients to stake ETH and requires providers to supply RPL collateral. Variations on this standard allow for assessing additional fees, such as fees to cover validator creation costs, or additional functionality such as returning unused ETH to the client.
 
 ## Motivation
 
@@ -66,7 +66,7 @@ function balanceOf(address owner) public view returns (uint256)
 
 ##### depositFor
 
-Deposits ETH and credits it to an address.
+Deposits ETH and credits it to an address. Fails if the transaction does not include at least 16 ETH.
 
 ``` js
 function ethDepositFor(address owner) public view
