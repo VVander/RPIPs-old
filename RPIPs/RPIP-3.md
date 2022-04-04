@@ -61,7 +61,7 @@ function processValidatorExit(uint256 numValidators) public view
 Gets the balance of ETH for an address.
 
 ``` js
-function rplBalanceOf(address owner) public view returns (uint256)
+function balanceOf(address owner) public view returns (uint256)
 ```
 
 ##### depositFor
