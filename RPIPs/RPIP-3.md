@@ -8,7 +8,7 @@ author: Mike Leach (@Wander) <mike@bamboofin.tech>
 discussions-to: https://discord.com/channels/405159462932971535/937053845610180628/956263874733174884
 created: 2022-03-19
 ---
-# Staking as a Service Provider Standard
+# Staking as a Service Provider Standard for ETH-only Clients
 
 ## Simple Summary
 
@@ -21,6 +21,10 @@ The following provides a standard API for Rocket Pool SaaS provider contracts. R
 ## Motivation
 
 An on-chain accounting standard for SaaS providers has benefits for both providers and users. Providers benefit from streamlined operations and increased interoperability, and users have increased visibility into their provider's operations, allowing them to verify fees and other expenses are accounted for correctly.
+
+A RPRC-3 standard contract brings together two actors which are not served by the base Rocket Pool protocol:
+1) A client who wishes to earn staking rewards on their ETH without any RPL exposure and is willing to trust a SaaS provider to run a validator on their behalf. This actor benefits from an RPRC-3 relationship by earning extra rewards on their ETH above what rETH can provide.
+2) A SaaS provider with unstaked RPL who wishes to increase capital efficiency of this holding by engaging in a trusted relationship with clients via staking RPL on behalf of the client. This actor benefits from an RPRC-3 relationship by earning RPL rewards from previously-unstaked RPL.
 
 ## Specification
 
