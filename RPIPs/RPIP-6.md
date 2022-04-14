@@ -1,8 +1,9 @@
 ---
 rpip: TBA
 author: Ken Smith (@htimsk) <shtimseht@gmail.com>
-status: Living
-type: Informational
+status: Draft
+type: Protocol
+category: Core
 discussions-to: https://dao.rocketpool.net/t/unethbonded-ueb-minipools/447 
 created: 2022-04-14
 ---
@@ -44,7 +45,7 @@ For example, if your command rocket pool node status returns with: The node has 
 ## Backwards Compatibility
 This RPIP would be fully compatible with the existing two modalities of RP node formation, the 16-ETH half-minipool, and the 32-ETH half-minipool. 
 ## Security Considerations
-One potential security implication occurs when the node operator performs poorly and exits from the beacon chain with less than 31 ETH 
+One potential security implication occurs when the node operator performs poorly and exits from the beacon chain with less than 31 ETH. In this edge case, the bonded RPL will need to be auctioned off to recover the lost funds. The amount of ETH paid for the auctioned RPL is dependent on the auction prices, which may or may not be 16 ETH in value. 
  
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
