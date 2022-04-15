@@ -44,8 +44,14 @@ For example, if your command rocket pool node status returns with: The node has 
  
 ## Backwards Compatibility
 This RPIP would be fully compatible with the existing two modalities of RP node formation, the 16-ETH half-minipool, and the 32-ETH half-minipool. 
+
 ## Security Considerations
 One potential security implication occurs when the node operator performs poorly and exits from the beacon chain with less than 31 ETH. In this edge case, the bonded RPL will need to be auctioned off to recover the lost funds. The amount of ETH paid for the auctioned RPL is dependent on the auction prices, which may or may not be 16 ETH in value. 
  
+## Open Questions
+* We should evaluate the auction mechanism as the existing one may add risk since it does not guarantee that the auction price of RPL will equal the expected market price of the token.  Since a UEB minipool is backed by  RPL instead of ETH, if we needed to liquidate RPL to cover a UEB minipool that exited with less than 31 ETH would are not guaranteed to cover the market price or RPL to equal the incurred ETH loss. 
+* Does this additional demand for RPL threaten RPL liquidity depth? 
+
+
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
